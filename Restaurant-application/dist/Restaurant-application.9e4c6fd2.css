@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Gilda Display, serif;
+}
+
+.header {
+  color: #fff;
+  text-align: center;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.nav-items {
+  justify-content: center;
+  gap: 50px;
+  display: flex;
+}
+
+.nav-items li {
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.nav-items li:hover {
+  color: #ff5200;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100px;
+}
+/*# sourceMappingURL=Restaurant-application.9e4c6fd2.css.map */
