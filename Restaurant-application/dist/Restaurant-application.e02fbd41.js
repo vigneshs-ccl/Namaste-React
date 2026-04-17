@@ -796,23 +796,114 @@ const Header = ()=>{
     }, undefined);
 };
 _c = Header;
-const RestaurantApplication = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+// Restaurant card
+const RestaurantCard = ({ resName, cusine, rating, bannerImg })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: bannerImg,
+                alt: "Restaurant"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 30,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: resName
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Cuisine: ",
+                    cusine
+                ]
+            }, void 0, true, {
+                fileName: "index.js",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Rating: ",
+                    rating,
+                    "\u2B50\uFE0F"
+                ]
+            }, void 0, true, {
+                fileName: "index.js",
+                lineNumber: 33,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "index.js",
-        lineNumber: 27,
-        columnNumber: 10
+        lineNumber: 29,
+        columnNumber: 5
     }, undefined);
 };
-_c1 = RestaurantApplication;
+_c1 = RestaurantCard;
+const RestaurantApplication = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 41,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "header-restaurants",
+                children: "Restaurants List"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                        resName: "Restaurant",
+                        cusine: "Indian",
+                        rating: "4.5",
+                        bannerImg: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/54/46/dd/restaurant-dining-space.jpg?w=600&h=600&s=1"
+                    }, void 0, false, {
+                        fileName: "index.js",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                        resName: "Restaurant 2",
+                        cusine: "Chinese",
+                        rating: "4",
+                        bannerImg: "https://assets.indiaonline.in/cat-default/450/Restaurants-Cafe.webp"
+                    }, void 0, false, {
+                        fileName: "index.js",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "index.js",
+                lineNumber: 43,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c2 = RestaurantApplication;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantApplication, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 32,
+    lineNumber: 64,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
+var _c, _c1, _c2;
 $RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "RestaurantApplication");
+$RefreshReg$(_c1, "RestaurantCard");
+$RefreshReg$(_c2, "RestaurantApplication");
 
   $parcel$ReactRefreshHelpers$3d99.postlude(module);
 } finally {

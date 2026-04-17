@@ -38,4 +38,40 @@
 .logo {
   width: 100px;
 }
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 20%;
+  margin: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.card p {
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.header-restaurants {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.restaurant-container {
+  flex-wrap: wrap;
+  display: flex;
+}
 /*# sourceMappingURL=Restaurant-application.9e4c6fd2.css.map */
